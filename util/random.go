@@ -22,6 +22,11 @@ func RandomCurrency() string {
 	return currencies[rand.Intn(n)]
 }
 
+// RandomID generates a random ID
+func RandomID() int64 {
+	return randomInt(1, 1000)
+}
+
 // randomInt generates a random integer between min and max
 func randomInt(min, max int64) int64 {
 	return min + rand.Int63n(max - min + 1)

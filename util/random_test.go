@@ -23,3 +23,8 @@ func TestRandomCurrency(t *testing.T) {
 	require.NotZero(t, s)
 	require.Len(t, s, 3)
 }
+
+func TestRandomID(t *testing.T) {
+	i := RandomID()
+	require.IsType(t, int64(0), i)
+}
